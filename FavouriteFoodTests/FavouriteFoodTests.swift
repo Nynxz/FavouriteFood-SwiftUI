@@ -10,24 +10,35 @@ import XCTest
 
 class FavouriteFoodTests: XCTestCase {
 
-    override func setUpWithError() throws {
-        // Put setup code here. This method is called before the invocation of each test method in the class.
-    }
-
-    override func tearDownWithError() throws {
-        // Put teardown code here. This method is called after the invocation of each test method in the class.
-    }
-
     func testExample() throws {
-        // This is an example of a functional test case.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
+        
+        let pie: Food = Food(title: "Meat Pie", image: "meatpie", description: "Chunky Steak wrapped in golden pastry", story: "I love pies, I even have a pie T-Shirt")
+        
+        XCTAssertEqual(pie.title, "Meat Pie")
+        XCTAssertEqual(pie.image, "meatpie")
+        XCTAssertEqual(pie.description, "Chunky Steak wrapped in golden pastry")
+        XCTAssertEqual(pie.story, "I love pies, I even have a pie T-Shirt")
+        
     }
-
-    func testPerformanceExample() throws {
-        // This is an example of a performance test case.
-        self.measure {
-            // Put the code you want to measure the time of here.
-        }
-    }
-
 }
+
+/*
+ 
+    NOT USED
+ 
+     override func setUpWithError() throws {
+         // Put setup code here. This method is called before the invocation of each test method in the class.
+     }
+
+     override func tearDownWithError() throws {
+         // Put teardown code here. This method is called after the invocation of each test method in the class.
+     }
+     
+     func testPerformanceExample() throws {
+         // This is an example of a performance test case.
+         self.measure {
+             // Put the code you want to measure the time of here.
+         }
+     }
+ 
+ */

@@ -10,11 +10,11 @@ import SwiftUI
 
 struct Food {
     var title: String
-    var image: Image
+    var image: String
     var description: String
     var story: String
     
-    init(title: String, image: Image, description: String, story: String) {
+    init(title: String, image: String, description: String, story: String) {
         self.title = title
         self.image = image
         self.description = description
