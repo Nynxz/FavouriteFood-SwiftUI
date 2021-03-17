@@ -4,6 +4,7 @@
 //
 //  Created by Henry Lee on 17/3/21.
 //
+// This is a View which houses the look of the Main Food Page Component
 
 import SwiftUI
 
@@ -16,7 +17,7 @@ struct ContentView: View {
             FoodImageView(food: food)
             
             FoodTitleBarView(food: food)
-                .padding(.top, -60)
+                .padding(.top, -60) // Padding to bring the title up over the Image
             
             FoodStoryView(food: food)
                 .padding(.top, -20)

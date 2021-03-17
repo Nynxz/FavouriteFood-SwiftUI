@@ -4,15 +4,18 @@
 //
 //  Created by Henry Lee on 17/3/21.
 //
+// This is a View which houses the look of the Food Title Component of our main Food Page
 
 import SwiftUI
 
 struct FoodTitleBarView: View {
     
+    // A way to 'get passed' the food reference
     var food: Food
     
     var body: some View {
         
+        // Using a ZStack to 'layer' components
         ZStack {
             
             Rectangle()
@@ -27,7 +30,7 @@ struct FoodTitleBarView: View {
             .padding(.vertical, 10)
             .foregroundColor(.black)
             
-        }
+        } // Styling
         .fixedSize(horizontal: false, vertical: true)
         .cornerRadius(25)
         .shadow(radius: 15)
