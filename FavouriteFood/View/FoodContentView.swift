@@ -29,7 +29,7 @@ struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
         ContentView(food: pie)
             .preferredColorScheme(.light)
-            .previewDevice("iPad (8th generation)")
+            //.previewDevice("iPad (8th generation)")
 
 
     }
