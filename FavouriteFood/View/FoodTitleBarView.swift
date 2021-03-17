@@ -23,7 +23,7 @@ struct FoodTitleBarView: View {
                 
             VStack(alignment: .leading) {
                 Text(food.title)
-                        .font(/*@START_MENU_TOKEN@*/.title/*@END_MENU_TOKEN@*/)
+                        .font(.title)
                 Text(food.description)
                         .font(.subheadline)
             }
