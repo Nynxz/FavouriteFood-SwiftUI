@@ -8,11 +8,15 @@
 
 /* Begin PBXBuildFile section */
 		3FAD5AF72600F8080023E4B6 /* FavouriteFoodApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FAD5AF62600F8080023E4B6 /* FavouriteFoodApp.swift */; };
-		3FAD5AF92600F8080023E4B6 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FAD5AF82600F8080023E4B6 /* ContentView.swift */; };
+		3FAD5AF92600F8080023E4B6 /* FoodContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FAD5AF82600F8080023E4B6 /* FoodContentView.swift */; };
 		3FAD5AFB2600F80A0023E4B6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3FAD5AFA2600F80A0023E4B6 /* Assets.xcassets */; };
 		3FAD5AFE2600F80A0023E4B6 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3FAD5AFD2600F80A0023E4B6 /* Preview Assets.xcassets */; };
 		3FAD5B092600F80A0023E4B6 /* FavouriteFoodTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FAD5B082600F80A0023E4B6 /* FavouriteFoodTests.swift */; };
 		3FAD5B142600F80A0023E4B6 /* FavouriteFoodUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FAD5B132600F80A0023E4B6 /* FavouriteFoodUITests.swift */; };
+		3FEFA0F42600F86B00A9A713 /* FoodModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FEFA0F32600F86B00A9A713 /* FoodModel.swift */; };
+		3FEFA0F92600FB9100A9A713 /* FoodImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FEFA0F82600FB9100A9A713 /* FoodImageView.swift */; };
+		3FEFA0FE2601003A00A9A713 /* FoodTitleBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FEFA0FD2601003A00A9A713 /* FoodTitleBarView.swift */; };
+		3FEFA103260105BE00A9A713 /* FoodStoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FEFA102260105BE00A9A713 /* FoodStoryView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,7 +39,7 @@
 /* Begin PBXFileReference section */
 		3FAD5AF32600F8070023E4B6 /* FavouriteFood.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FavouriteFood.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3FAD5AF62600F8080023E4B6 /* FavouriteFoodApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavouriteFoodApp.swift; sourceTree = "<group>"; };
-		3FAD5AF82600F8080023E4B6 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		3FAD5AF82600F8080023E4B6 /* FoodContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodContentView.swift; sourceTree = "<group>"; };
 		3FAD5AFA2600F80A0023E4B6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3FAD5AFD2600F80A0023E4B6 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		3FAD5AFF2600F80A0023E4B6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -45,6 +49,10 @@
 		3FAD5B0F2600F80A0023E4B6 /* FavouriteFoodUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FavouriteFoodUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3FAD5B132600F80A0023E4B6 /* FavouriteFoodUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavouriteFoodUITests.swift; sourceTree = "<group>"; };
 		3FAD5B152600F80A0023E4B6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3FEFA0F32600F86B00A9A713 /* FoodModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodModel.swift; sourceTree = "<group>"; };
+		3FEFA0F82600FB9100A9A713 /* FoodImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodImageView.swift; sourceTree = "<group>"; };
+		3FEFA0FD2601003A00A9A713 /* FoodTitleBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodTitleBarView.swift; sourceTree = "<group>"; };
+		3FEFA102260105BE00A9A713 /* FoodStoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodStoryView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,7 +104,8 @@
 			isa = PBXGroup;
 			children = (
 				3FAD5AF62600F8080023E4B6 /* FavouriteFoodApp.swift */,
-				3FAD5AF82600F8080023E4B6 /* ContentView.swift */,
+				3FEFA0F22600F83C00A9A713 /* View */,
+				3FEFA0F12600F83700A9A713 /* Model */,
 				3FAD5AFA2600F80A0023E4B6 /* Assets.xcassets */,
 				3FAD5AFF2600F80A0023E4B6 /* Info.plist */,
 				3FAD5AFC2600F80A0023E4B6 /* Preview Content */,
@@ -128,6 +137,25 @@
 				3FAD5B152600F80A0023E4B6 /* Info.plist */,
 			);
 			path = FavouriteFoodUITests;
+			sourceTree = "<group>";
+		};
+		3FEFA0F12600F83700A9A713 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				3FEFA0F32600F86B00A9A713 /* FoodModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		3FEFA0F22600F83C00A9A713 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				3FAD5AF82600F8080023E4B6 /* FoodContentView.swift */,
+				3FEFA0F82600FB9100A9A713 /* FoodImageView.swift */,
+				3FEFA0FD2601003A00A9A713 /* FoodTitleBarView.swift */,
+				3FEFA102260105BE00A9A713 /* FoodStoryView.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -259,7 +287,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3FAD5AF92600F8080023E4B6 /* ContentView.swift in Sources */,
+				3FEFA0F92600FB9100A9A713 /* FoodImageView.swift in Sources */,
+				3FEFA0F42600F86B00A9A713 /* FoodModel.swift in Sources */,
+				3FAD5AF92600F8080023E4B6 /* FoodContentView.swift in Sources */,
+				3FEFA0FE2601003A00A9A713 /* FoodTitleBarView.swift in Sources */,
+				3FEFA103260105BE00A9A713 /* FoodStoryView.swift in Sources */,
 				3FAD5AF72600F8080023E4B6 /* FavouriteFoodApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
