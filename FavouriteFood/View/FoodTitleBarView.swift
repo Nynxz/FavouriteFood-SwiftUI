@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct FoodTitleBarView: View {
+    var food: Food
     var body: some View {
         
         ZStack {
@@ -16,12 +17,12 @@ struct FoodTitleBarView: View {
                 .foregroundColor(.white)
                 
             VStack(alignment: .leading) {
-                    Text("Title")
+                Text(food.title)
                         .font(/*@START_MENU_TOKEN@*/.title/*@END_MENU_TOKEN@*/)
-                    Text("Description")
+                Text(food.description)
                         .font(.subheadline)
             }
-            .padding(.vertical, 5)
+            .padding(.vertical, 10)
             .foregroundColor(.black)
             
         }
@@ -35,8 +36,10 @@ struct FoodTitleBarView: View {
 }
 
 struct FoodTitleBarView_Previews: PreviewProvider {
+
     static var previews: some View {
-        FoodTitleBarView()
+        let pie = Food(title: "Pie", image: "meatpie", description: "Description Text", story: "Long Story Text Here")
+        FoodTitleBarView(food: pie)
             .preferredColorScheme(.light)
             .previewDevice("iPad (8th generation)")
             
