@@ -8,7 +8,9 @@
 import SwiftUI
 
 struct FoodTitleBarView: View {
+    
     var food: Food
+    
     var body: some View {
         
         ZStack {
@@ -38,7 +40,6 @@ struct FoodTitleBarView: View {
 struct FoodTitleBarView_Previews: PreviewProvider {
 
     static var previews: some View {
-        let pie = Food(title: "Pie", image: "meatpie", description: "Description Text", story: "Long Story Text Here")
         FoodTitleBarView(food: pie)
             .preferredColorScheme(.light)
             .previewDevice("iPad (8th generation)")

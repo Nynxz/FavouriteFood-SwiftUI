@@ -6,20 +6,29 @@
 //
 
 import XCTest
+import SwiftUI
 @testable import FavouriteFood
 
 class FavouriteFoodTests: XCTestCase {
-
-    func testExample() throws {
-        
-        let pie: Food = Food(title: "Meat Pie", image: "meatpie", description: "Chunky Steak wrapped in golden pastry", story: "I love pies, I even have a pie T-Shirt")
-        
+    
+    let pie: Food = Food(title: "Meat Pie", imageName: "meatpie", description: "Chunky Steak wrapped in golden pastry", story: "I love pies, I even have a pie T-Shirt")
+    
+    func testFoodTitle() throws {
         XCTAssertEqual(pie.title, "Meat Pie")
-        XCTAssertEqual(pie.image, "meatpie")
-        XCTAssertEqual(pie.description, "Chunky Steak wrapped in golden pastry")
-        XCTAssertEqual(pie.story, "I love pies, I even have a pie T-Shirt")
-        
     }
+    func testFoodImageName() throws {
+        XCTAssertEqual(pie.imageName, "meatpie")
+    }
+    func testFoodImage() throws {
+        XCTAssertEqual(pie.image, Image(pie.imageName))
+    }
+    func testFoodDescription() throws {
+        XCTAssertEqual(pie.description, "Chunky Steak wrapped in golden pastry")
+    }
+    func testFoodStory() throws {
+        XCTAssertEqual(pie.story, "I love pies, I even have a pie T-Shirt")
+    }
+    
 }
 
 /*

@@ -8,10 +8,12 @@
 import SwiftUI
 
 struct FoodImageView: View {
-    let img: String
+    
+    let food: Food
+    
     var body: some View {
         
-        Image(img)
+        food.image
             .resizable()
             .aspectRatio(contentMode: .fit)
             .cornerRadius(60)
@@ -25,6 +27,6 @@ struct FoodImageView: View {
 
 struct FoodImageView_Previews: PreviewProvider {
     static var previews: some View {
-        FoodImageView(img: "meatpie")
+        FoodImageView(food: pie)
     }
 }
