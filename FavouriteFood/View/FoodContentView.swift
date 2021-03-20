@@ -8,12 +8,12 @@
 
 import SwiftUI
 
-struct ContentView: View {
+struct FoodContentView: View {
     
     let food: Food
 
     var body: some View {
-        ScrollView{
+        ScrollView {
             FoodImageView(food: food)
             
             FoodTitleBarView(food: food)
@@ -27,10 +27,8 @@ struct ContentView: View {
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView(food: pie)
+        FoodContentView(food: pie)
             .preferredColorScheme(.light)
-            //.previewDevice("iPad (8th generation)")
-
-
+            .previewDevice("iPad (8th generation)")
     }
 }

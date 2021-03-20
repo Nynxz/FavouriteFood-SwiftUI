@@ -11,7 +11,7 @@ import SwiftUI
 struct FoodTitleBarView: View {
     
     // A way to 'get passed' the food reference
-    var food: Food
+    let food: Food
     
     var body: some View {
         

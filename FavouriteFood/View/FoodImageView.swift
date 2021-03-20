@@ -21,7 +21,8 @@ struct FoodImageView: View {
             .aspectRatio(contentMode: .fit)
             .cornerRadius(60)
             .overlay(RoundedRectangle(cornerRadius: 60)
-                        .stroke(Color.white, lineWidth: 10))
+                        .stroke(Color.white, lineWidth: 10)
+            )
             .shadow(radius: 25)
             .padding()
         
